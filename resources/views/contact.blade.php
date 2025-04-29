@@ -1,0 +1,292 @@
+@extends('layouts.nav') {{-- Menggunakan layout yang baru dibuat --}}
+
+@section('Welcome to HOMEPAGE') 
+
+@section('content')
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+   <h2 class="text-center font-extrabold text-lg md:text-xl mb-2">
+    Get In Touch With Us
+   </h2>
+   <p class="text-center text-gray-400 text-xs md:text-sm max-w-xl mx-auto mb-12 leading-tight">
+    For More Information About Our Product &amp; Services. Please Feel Free To Drop Us An Email.
+      Our Staff Always Be There To Help You Out. Do Not Hesitate!
+   </p>
+   <div class="flex flex-col md:flex-row md:space-x-20 max-w-5xl mx-auto">
+    <div class="flex flex-col space-y-10 mb-12 md:mb-0 md:w-1/3">
+     <div class="flex items-start space-x-3">
+      <i class="fas fa-map-marker-alt mt-1 text-black">
+      </i>
+      <div>
+       <h3 class="font-semibold text-sm mb-1">
+        Address
+       </h3>
+       <p class="text-xs leading-tight">
+        236 5th SE Avenue, New
+        <br/>
+        York NY10000, United
+        <br/>
+        States
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start space-x-3">
+      <i class="fas fa-phone-alt mt-1 text-black">
+      </i>
+      <div>
+       <h3 class="font-semibold text-sm mb-1">
+        Phone
+       </h3>
+       <p class="text-xs leading-tight">
+        Mobile: +(84) 546-6789
+        <br/>
+        Hotline: +(84) 456-6789
+       </p>
+      </div>
+     </div>
+     <div class="flex items-start space-x-3">
+      <i class="fas fa-clock mt-1 text-black">
+      </i>
+      <div>
+       <h3 class="font-semibold text-sm mb-1">
+        Working Time
+       </h3>
+       <p class="text-xs leading-tight">
+        Monday-Friday: 9:00 - 22:00
+        <br/>
+        Saturday-Sunday: 9:00 - 21:00
+       </p>
+      </div>
+     </div>
+    </div>
+    <form aria-label="Contact form" class="md:w-2/3 space-y-6">
+     <div>
+      <label class="block text-xs font-semibold mb-1" for="name">
+       Your name
+      </label>
+      <input class="w-full rounded-md border border-gray-300 px-3 py-2 text-xs placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#7DB6B6] focus:border-[#7DB6B6]" id="name" name="name" placeholder="Abc" type="text"/>
+     </div>
+     <div>
+      <label class="block text-xs font-semibold mb-1" for="email">
+       Email address
+      </label>
+      <input class="w-full rounded-md border border-gray-300 px-3 py-2 text-xs placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#7DB6B6] focus:border-[#7DB6B6]" id="email" name="email" placeholder="Abc@def.com" type="email"/>
+     </div>
+     <div>
+      <label class="block text-xs font-semibold mb-1" for="subject">
+       Subject
+      </label>
+      <input class="w-full rounded-md border border-gray-300 px-3 py-2 text-xs placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#7DB6B6] focus:border-[#7DB6B6]" id="subject" name="subject" placeholder="This is an optional" type="text"/>
+     </div>
+     <div>
+      <label class="block text-xs font-semibold mb-1" for="message">
+       Message
+      </label>
+      <textarea class="w-full rounded-md border border-gray-300 px-3 py-2 text-xs placeholder-gray-400 resize-none focus:outline-none focus:ring-1 focus:ring-[#7DB6B6] focus:border-[#7DB6B6]" id="message" name="message" placeholder="Hi! i'd like to ask about" rows="3"></textarea>
+     </div>
+     <div class="flex justify-center">
+      <button class="bg-[#7DB6B6] text-white text-xs font-light rounded-md px-12 py-2 hover:bg-[#6aa3a3] transition-colors" type="submit">
+       Submit
+      </button>
+     </div>
+    </form>
+   </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="bg-[#7DB6B6] relative pt-16 pb-24 overflow-hidden">
+   <svg class="absolute top-0 left-0 w-full h-20 md:h-28" fill="none" preserveaspectratio="none" viewbox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 80C120 0 360 0 480 0C600 0 720 40 840 40C960 40 1080 0 1200 0C1320 0 1440 80 1440 80H0Z" fill="#7DB6B6">
+    </path>
+   </svg>
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start max-w-6xl mx-auto space-y-10 md:space-y-0 md:space-x-12 text-black">
+     <div class="flex items-center space-x-3 max-w-xs">
+      <i class="fas fa-trophy text-lg">
+      </i>
+      <div>
+       <h4 class="font-semibold text-sm">
+        High Quality
+       </h4>
+       <p class="text-xs font-light">
+        crafted from top materials
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-3 max-w-xs">
+      <i class="fas fa-check-circle text-lg">
+      </i>
+      <div>
+       <h4 class="font-semibold text-sm">
+        Warranty Protection
+       </h4>
+       <p class="text-xs font-light">
+        Over 2 years
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-3 max-w-xs">
+      <i class="fas fa-truck text-lg">
+      </i>
+      <div>
+       <h4 class="font-semibold text-sm">
+        Free Shipping
+       </h4>
+       <p class="text-xs font-bold">
+        Order over 150 $
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center space-x-3 max-w-xs">
+      <i class="fas fa-headset text-lg">
+      </i>
+      <div>
+       <h4 class="font-semibold text-sm">
+        24 / 7 support
+       </h4>
+       <p class="text-xs font-light">
+        Dedicated support
+       </p>
+      </div>
+     </div>
+    </div>
+    <!-- Footer -->
+    <footer class="mt-20 text-black text-xs font-light max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex flex-col md:flex-row md:justify-between md:space-x-20">
+      <div class="mb-10 md:mb-0 md:w-1/4 space-y-4">
+       <p>
+        Customer Supports:
+       </p>
+       <p class="font-semibold">
+        (0341) 479-148
+       </p>
+       <p>
+        Jl. Lorem Ipsum
+       </p>
+       <p>
+        bagus@gmail.com
+       </p>
+      </div>
+      <div class="mb-10 md:mb-0 md:w-1/5 space-y-2">
+       <h5 class="font-semibold text-xs mb-2">
+        TOP CATEGORY
+       </h5>
+       <p>
+        Freelancer
+       </p>
+       <p>
+        Part Time
+       </p>
+       <p>
+        Work From Home
+       </p>
+       <p>
+        Full Time
+       </p>
+      </div>
+      <div class="mb-10 md:mb-0 md:w-1/5 space-y-2">
+       <h5 class="font-semibold text-xs mb-2">
+        QUICK LINKS
+       </h5>
+       <p>
+        Shop Product
+       </p>
+       <p>
+        Shoping Cart
+       </p>
+       <p>
+        Wishlist
+       </p>
+       <p>
+        Compare
+       </p>
+       <p>
+        Track Order
+       </p>
+       <p>
+        Customer Help
+       </p>
+       <p>
+        About Us
+       </p>
+      </div>
+      <div class="mb-10 md:mb-0 md:w-1/5 space-y-4">
+       <h5 class="font-semibold text-xs mb-2">
+        DOWNLOAD APP
+       </h5>
+       <div class="flex flex-col space-y-3">
+        <a aria-label="Download on Google Play" class="flex items-center space-x-2 bg-gray-200 rounded-md px-3 py-2 w-max" href="#">
+         <img alt="Google Play icon with play button" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/2963e395-29e4-47a9-e1f3-092abd4f34d1.jpg" width="24"/>
+         <div class="text-xs leading-tight">
+          <p class="font-light">
+           Get it now
+          </p>
+          <p class="font-semibold">
+           Google Play
+          </p>
+         </div>
+        </a>
+        <a aria-label="Download on App Store" class="flex items-center space-x-2 bg-gray-200 rounded-md px-3 py-2 w-max" href="#">
+         <img alt="App Store icon with Apple logo" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/82657985-0cd8-4c11-57b5-ac81739fd31f.jpg" width="24"/>
+         <div class="text-xs leading-tight">
+          <p class="font-light">
+           Get it now
+          </p>
+          <p class="font-semibold">
+           App Store
+          </p>
+         </div>
+        </a>
+       </div>
+      </div>
+      <div class="md:w-1/4 space-y-3">
+       <h5 class="font-semibold text-xs mb-2">
+        POPULAR TAG
+       </h5>
+       <div class="flex flex-wrap gap-2">
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Part Time
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Freelance
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         WFH
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Malang
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Jakarta
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Tunjangan
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Manajer
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Full Time
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Sekretaris
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         PT
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Security
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         OB
+        </span>
+        <span class="bg-[#6a9f9f] rounded-md px-2 py-1 text-[9px]">
+         Customer Service
+        </span>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </section>
+@endsection 
+
