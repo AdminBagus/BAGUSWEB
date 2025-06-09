@@ -50,7 +50,7 @@
             <div class="max-w-7xl mx-auto flex items-center justify-between px-2 sm:px-4 lg:px-2 h-16">
                 {{-- Logo and Brand Name --}}
                 <div class="flex items-center space-x-2">
-                    <a href="{{ url('/') }}" class="flex items-center mr-10">
+                    <a href="{{ route('homepage') }}" class="flex items-center mr-10">
                         <img
                             alt="Bagus Logo"
                             class="w-auto h-8"
@@ -64,12 +64,22 @@
 
                 {{-- Desktop Navigation Links --}}
                 <ul class="hidden md:flex items-center space-x-4 text-sm font-normal flex-grow justify-end mr-4">
-                    {{-- Gunakan route() helper jika memungkinkan --}}
-                    <li><a class="'text-[#7DB6B6] font-semibold' : 'hover:text-[#7DB6B6]' }}" href="#">Home</a></li>
-                    <li><a class="{{ request()->routeIs('projects.*') ? 'text-[#7DB6B6] font-semibold' : 'hover:text-[#7DB6B6]' }}" href="#">Project</a></li> {{-- Ganti dengan nama route project Anda --}}
-                    <li><a class="{{ request()->routeIs('contact') ? 'text-[#7DB6B6] font-semibold' : 'hover:text-[#7DB6B6]' }}" href="#">Contact</a></li> {{-- Ganti dengan nama route contact Anda --}}
+                    <li>
+                        <a class="{{ request()->routeIs('homepage') ? 'text-[#7DB6B6] font-semibold' : 'hover:text-[#7DB6B6]' }}" href="{{ route('homepage') }}">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="{{ request()->routeIs('project') ? 'text-[#7DB6B6] font-semibold' : 'hover:text-[#7DB6B6]' }}" href="{{ route('project') }}">
+                            Project
+                        </a>
+                    </li>
+                    <li>
+                        <a class="{{ request()->routeIs('contact') ? 'text-[#7DB6B6] font-semibold' : 'hover:text-[#7DB6B6]' }}" href="{{ route('contact') }}">
+                            Contact
+                        </a>
+                    </li>
                 </ul>
-
                 {{-- Search and Auth Section --}}
                 <div class="hidden md:flex items-center space-x-4 flex-shrink-0">
                     {{-- Search Form --}}
